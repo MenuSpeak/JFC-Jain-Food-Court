@@ -43,9 +43,6 @@
         }
 
 
-
-
-
         
 
 .tabs-container {
@@ -1198,6 +1195,9 @@
 
    <div class="tabs-scroll">
 <button class="tab active" data-cat="all">🍽️ All Items</button>
+<button class="tab" data-cat="SNACKS">🍟 Fast Food & Snacks</button>
+<button class="tab" data-cat="FRENCH FRIES">🍟 French Fries</button>
+<button class="tab" data-cat="CHINESE">🍜 Chinese Special</button>        
 <button class="tab" data-cat="MAIN COURSE">🥘 Main Course</button>
 <button class="tab" data-cat="PUNJABI MAIN COURSE">🍛 Punjabi Main Course</button>
 <button class="tab" data-cat="DAL">🍲 Dal</button>
@@ -1218,11 +1218,15 @@
 <button class="tab" data-cat="MASTANI">🍧 Mastani</button>
 <button class="tab" data-cat="FALOODA">🍨 Falooda</button>
 <button class="tab" data-cat="MOJITO">🍹 Mojito</button>
-     <button class="tab" data-cat="DOSA">🥞 Dosa & South Indian</button>
+<button class="tab" data-cat="DOSA">🥞 Dosa & South Indian</button>
 <button class="tab" data-cat="UTTAPA">🥞 Uttapa Specials</button>
 <button class="tab" data-cat="SOUP">🥣 Soups</button>
 <button class="tab" data-cat="RAGDA">🍛 Ragda</button>
 <button class="tab" data-cat="BHEL VARIETIES">🥗 Bhel Varieties</button>   
+
+
+
+         
    </div>  
                 </div>
             </div>
@@ -1368,6 +1372,28 @@
         // Menu Data - FIXED VERSION
         const data =
 [
+
+
+  {"id": 217, "cat": "SNACKS", "name": "Veg Cheese Momos (5pc) | व्हेज चीज मोमोज", "price": "99/-", "desc": "Steamed dumplings filled with veggies and melted cheese", "tags": ["Veg", "Snacks", "Momos"], "img": "img/veg_cheese_momos.jpeg"},
+  {"id": 218, "cat": "SNACKS", "name": "Veg Paneer Momos (5pc) | व्हेज पनीर मोमोज", "price": "89/-", "desc": "Steamed dumplings filled with fresh paneer and spices", "tags": ["Veg", "Snacks", "Momos"], "img": "img/veg_paneer_momos.jpeg"},
+  {"id": 219, "cat": "SNACKS", "name": "Cheese Corn Triangle (5pc) | चीज कॉर्न ट्रँगल", "price": "99/-", "desc": "Crispy fried triangles filled with cheese and sweet corn", "tags": ["Veg", "Snacks"], "img": "img/cheese_corn_triangle.jpeg"},
+  {"id": 220, "cat": "SNACKS", "name": "Seasoned Mozzarella Stick (3pc) | सीझन्ड मोझारेला स्टिक", "price": "99/-", "desc": "Crispy fried sticks oozing with seasoned mozzarella cheese", "tags": ["Veg", "Snacks", "Cheese"], "img": "img/mozzarella_stick.jpeg"},
+  {"id": 221, "cat": "SNACKS", "name": "Cheese Corn Pops (5pc) | चीज कॉर्न पॉप्स", "price": "99/-", "desc": "Bite-sized crispy pops filled with cheese and corn", "tags": ["Veg", "Snacks"], "img": "img/cheese_corn_pops.jpeg"},
+  {"id": 222, "cat": "SNACKS", "name": "Veg Momos (5pc) | व्हेज मोमोज", "price": "69/-", "desc": "Classic steamed dumplings stuffed with mixed vegetables", "tags": ["Veg", "Snacks", "Momos"], "img": "img/veg_momos.jpeg"},
+
+  {"id": 225, "cat": "SNACKS", "name": "Misal Pav | मिसळ पाव", "price": "60/-", "desc": "Spicy sprouted moth bean curry served with soft pav", "tags": ["Veg", "Snacks", "Maharashtrian", "Spicy"], "img": "img/misal_pav.jpeg"},
+  {"id": 226, "cat": "SNACKS", "name": "Indori Poha | इंदौरी पोहे", "price": "20/-", "desc": "Authentic Indori style flattened rice breakfast snack", "tags": ["Veg", "Snacks", "Breakfast"], "img": "img/indori_poha.jpeg"},
+
+      
+  {"id": 223, "cat": "FRENCH FRIES", "name": "Salted French Fries | सॉल्टेड फ्रेंच फ्राइज", "price": "89/-", "desc": "Classic crispy potato fries tossed in salt", "tags": ["Veg", "Fries", "Snacks"], "img": "img/salted_french_fries.jpeg"},
+  {"id": 224, "cat": "FRENCH FRIES", "name": "Peri Peri French Fries | पेरी पेरी फ्रेंच फ्राइज", "price": "99/-", "desc": "Crispy fries tossed in spicy peri peri seasoning", "tags": ["Veg", "Fries", "Snacks", "Spicy"], "img": "img/peri_peri_french_fries.jpeg"},
+
+ {"id": 227, "cat": "CHINESE", "name": "Veg Manchurian (Half) | व्हेज मंचूरियन (हाफ)", "price": "60/-", "desc": "Deep fried vegetable balls tossed in Chinese sauces - Half Portion", "tags": ["Veg", "Chinese", "Half"], "img": "img/veg_manchurian_half.jpeg"},
+  {"id": 228, "cat": "CHINESE", "name": "Veg Manchurian (Full) | व्हेज मंचूरियन (फुल)", "price": "120/-", "desc": "Deep fried vegetable balls tossed in Chinese sauces - Full Portion", "tags": ["Veg", "Chinese", "Full"], "img": "img/veg_manchurian_full.jpeg"},
+  {"id": 229, "cat": "CHINESE", "name": "Soyabean Chilli (Half) | सोयाबीन चिल्ली (हाफ)", "price": "60/-", "desc": "Crispy soya chunks tossed in spicy chilli sauce - Half Portion", "tags": ["Veg", "Chinese", "Half"], "img": "img/soyabean_chilli_half.jpeg"},
+  {"id": 230, "cat": "CHINESE", "name": "Soyabean Chilli (Full) | सोयाबीन चिल्ली (फुल)", "price": "120/-", "desc": "Crispy soya chunks tossed in spicy chilli sauce - Full Portion", "tags": ["Veg", "Chinese", "Full"], "img": "img/soyabean_chilli_full.jpeg"},
+
+      
   {"id": 1, "cat": "MAIN COURSE", "name": "Mix Veg | मिक्स वेज", "price": "150/-", "desc": "Assorted mixed vegetables cooked in spices", "tags": ["Veg", "Main Course"], "img": "img/mix_veg.jpg"},
   {"id": 2, "cat": "MAIN COURSE", "name": "Veg Handi | वेज हांडी", "price": "160/-", "desc": "Mixed vegetables cooked in a traditional handi", "tags": ["Veg", "Main Course"], "img": "img/veg_handi.jpg"},
   {"id": 3, "cat": "MAIN COURSE", "name": "Veg Kolhapuri | वेज कोल्हापुरी", "price": "140/-", "desc": "Extra spicy mixed vegetable curry", "tags": ["Veg", "Main Course"], "img": "img/veg_kolhapuri.jpg"},
@@ -1380,6 +1406,7 @@
   {"id": 10, "cat": "PUNJABI MAIN COURSE", "name": "Paneer Masala | पनीर मसाला", "price": "180/-", "desc": "Paneer cubes in a thick spicy gravy", "tags": ["Veg", "Paneer"], "img": "img/paneer_masala.jpg"},
   {"id": 11, "cat": "PUNJABI MAIN COURSE", "name": "Shahi Paneer | शाही पनीर", "price": "180/-", "desc": "Royal style mild paneer in creamy gravy", "tags": ["Veg", "Paneer"], "img": "img/shahi_paneer.jpg"},
   {"id": 12, "cat": "PUNJABI MAIN COURSE", "name": "Kadai Paneer | कढई पनीर", "price": "180/-", "desc": "Paneer cooked with capsicum and kadai spices", "tags": ["Veg", "Paneer"], "img": "img/kadai_paneer.jpg"},
+        
   {"id": 13, "cat": "PUNJABI MAIN COURSE", "name": "Paneer Bhurji | पनीर भुर्जी", "price": "200/-", "desc": "Scrambled spiced cottage cheese", "tags": ["Veg", "Paneer"], "img": "img/paneer_bhurji.jpg"},
   {"id": 14, "cat": "PUNJABI MAIN COURSE", "name": "Matar Paneer | मटर पनीर", "price": "180/-", "desc": "Classic green peas and paneer curry", "tags": ["Veg", "Paneer"], "img": "img/matar_paneer.jpg"},
   {"id": 15, "cat": "PUNJABI MAIN COURSE", "name": "Cheese Anguri | चीज अंगूरी", "price": "120/-", "desc": "Special cheese balls in rich gravy", "tags": ["Veg", "Main Course"], "img": "img/cheese_anguri.jpg"},
@@ -1584,7 +1611,13 @@
   {"id": 214, "cat": "BHEL VARIETIES", "name": "Bhelpuri | भेळपुरी", "price": "30/-", "desc": "Savory street snack made with puffed rice and tangy chutneys", "tags": ["Veg", "Chaat", "Bhel"], "img": "img/bhelpuri.jpg"},
   {"id": 215, "cat": "BHEL VARIETIES", "name": "Sev Puri (5 pcs) | सेवपुरी (५ नग)", "price": "40/-", "desc": "Crispy puris topped with potatoes, chutneys, and plenty of sev", "tags": ["Veg", "Chaat"], "img": "img/sev_puri.jpg"},
   {"id": 216, "cat": "BHEL VARIETIES", "name": "Masala Puri (5 pcs) | मसाला पुरी (५ नग)", "price": "40/-", "desc": "Spicy chaat with crispy puris and masala", "tags": ["Veg", "Chaat"], "img": "img/masala_puri.jpg"},
-  {"id": 217, "cat": "BHEL VARIETIES", "name": "Dahi Puri (5 pcs) | दही पुरी (५ नग)", "price": "50/-", "desc": "Crispy puris filled with sweet yogurt and tangy chutneys", "tags": ["Veg", "Chaat"], "img": "img/dahi_puri.jpg"}
+  {"id": 217, "cat": "BHEL VARIETIES", "name": "Dahi Puri (5 pcs) | दही पुरी (५ नग)", "price": "50/-", "desc": "Crispy puris filled with sweet yogurt and tangy chutneys", "tags": ["Veg", "Chaat"], "img": "img/dahi_puri.jpg"},
+
+
+
+
+     
+      
 ];
               
         // Cart functionality    
